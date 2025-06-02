@@ -59,7 +59,7 @@ class Reproductor():
         self.barraVolumen.set(50)
         self.barraVolumen.place(x=100, y=225, width=200)
 
-        # Ecualización con barras más pequeñas
+        # Ecualización 
         fuente_pequena = font.Font(size=8)
 
         self.marcoEcualizador = Frame(self.ventana, bg="yellow")
@@ -93,7 +93,7 @@ class Reproductor():
         self.barraProgreso.place(x=100, y=120, width=200, height=20)
 
 
-        # carga inicial
+        # carga 
         if os.path.exists("canciones"):
             self.controlador.cargarCancionesDesdeCarpeta("canciones")
 
